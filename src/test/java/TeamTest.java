@@ -44,4 +44,20 @@ public class TeamTest {
     Team teamTwo = new Team("Bare Metal");
     assertEquals(teamTwo, Team.find(teamTwo.getId()));
   }
+
+  @Test
+  public void getMembers_initiallyReturnsEmptyList_ArrayList() {
+    Team.clearList();
+    Team testTeam = new Team("Code Conquerors");
+    assertEquals(0, testTeam.getMembers().size());
+  }
+
+  @Test
+  public void addMember_addsMemberToList_true() {
+    Team.clearList();
+    Team testTeam = new Team("Code Conquerors");
+    Member testMember = new Member("Aaron");
+    testTeam.addMember(testMember);
+    assertTrue(testTeam.getMembers().contains(testMember));
+  }
 }
