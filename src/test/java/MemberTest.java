@@ -14,4 +14,12 @@ public class MemberTest {
     Member member = new Member("Aaron");
     assertEquals("Aaron", member.getMemName());
   }
+
+  @Test
+  public void all_returnsAllInstancesOfMember_true() {
+    Member memberOne = new Member("Aaron");
+    Member memberTwo = new Member("Beth");
+    assertEquals(true, Member.all().contains(memberOne));
+    assertEquals(true, Member.all().contains(memberTwo));
+  }
 }
