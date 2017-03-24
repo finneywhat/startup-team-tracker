@@ -38,7 +38,7 @@ public class MemberTest {
   }
 
   @Test
-    public void find_returnsMemberWithSameId_memberTwo() {
+  public void find_returnsMemberWithSameId_memberTwo() {
     Member.clearList();
     Member memberOne = new Member("Aaron");
     Member memberTwo = new Member("Beth");

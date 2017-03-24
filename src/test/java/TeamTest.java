@@ -36,4 +36,12 @@ public class TeamTest {
     Team myTeam = new Team("Code Conquerors");
     assertEquals(1, myTeam.getId());
   }
+
+  @Test
+  public void find_returnsTeamWithSameId_teamTwo() {
+    Team.clearList();
+    Team teamOne = new Team("Code Conquerors");
+    Team teamTwo = new Team("Bare Metal");
+    assertEquals(teamTwo, Team.find(teamTwo.getId()));
+  }
 }
