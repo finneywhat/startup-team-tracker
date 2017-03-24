@@ -29,4 +29,11 @@ public class MemberTest {
     Member.clearList();
     assertEquals(0, Member.all().size());
   }
+
+  @Test
+  public void getId_instantiatesMemberInstanceWithAnId_1() {
+    Member.clearList();
+    Member member = new Member("Aaron");
+    assertEquals(1, member.getId());
+  }
 }
