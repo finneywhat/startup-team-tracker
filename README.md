@@ -1,26 +1,27 @@
-# _StartupTeamTracker_
+# StartupTeamTracker
 
-#### _StartupTeamTracker, 03-24-2017_
+#### Epicodus | Java Week Two Independent Project | 03-24-2017
 
 #### By _**Chris Finney**_
 
 ## Description
-_Example text for the description of the project_
-
-
-## Specifications
-
-| Behavior                   | Input Example     | Output Example    |
-| -------------------------- | -----------------:| -----------------:|
-
-
+A web application, written in Java, that will allow a hack-a-thon event coordinator to add/track teams and their members. The lesson objectives are to utilize RESTful routing and create instances of a custom class within another custom class.
 
 ## Setup/Installation Requirements
 
-* _Clone the repository_
-* _Run the command 'gradle run'_
-* _Open browser and go to localhost:4567_
+* Clone the repository
+* Run the command 'gradle run'
+* Open browser and go to localhost:4567
 
+## Technologies Used
+
+* Java
+* Spark
+* Junit
+* Gradle
+* CSS
+* Bootstrap
+* Git
 
 ### License
 
