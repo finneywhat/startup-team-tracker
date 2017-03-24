@@ -7,7 +7,7 @@ public class Member {
 
   public Member(String memberName) {
     mMemberName = memberName;
-    instances.add(this); 
+    instances.add(this);
   }
 
   public String getMemName() {
@@ -16,5 +16,9 @@ public class Member {
 
   public static List<Member> all() {
     return instances;
+  }
+
+  public static void clearList() {
+    instances.clear();
   }
 }

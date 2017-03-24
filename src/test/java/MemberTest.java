@@ -22,4 +22,11 @@ public class MemberTest {
     assertEquals(true, Member.all().contains(memberOne));
     assertEquals(true, Member.all().contains(memberTwo));
   }
+
+  @Test
+  public void clearList_emptiesAllMembersFromArrayList_0() {
+    Member member = new Member("Aaron");
+    Member.clearList();
+    assertEquals(0, Member.all().size());
+  }
 }
