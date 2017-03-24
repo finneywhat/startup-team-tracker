@@ -22,4 +22,18 @@ public class TeamTest {
     assertEquals(true, Team.all().contains(teamOne));
     assertEquals(true, Team.all().contains(teamTwo));
   }
+
+  @Test
+  public void clearList_emptiesAllTeamsFromArrayList_0() {
+    Team myTeam = new Team("Code Conquerors");
+    Team.clearList();
+    assertEquals(0, Team.all().size());
+  }
+
+  @Test
+  public void getId_instantiatesTeamInstanceWithAnId_1() {
+    Team.clearList();
+    Team myTeam = new Team("Code Conquerors");
+    assertEquals(1, myTeam.getId());
+  }
 }
