@@ -14,4 +14,12 @@ public class TeamTest {
     Team myTeam = new Team("Code Conquerors");
     assertEquals("Code Conquerors", myTeam.getTeamName());
   }
+
+  @Test
+  public void all_returnsAllInstancesOfTeam_true() {
+    Team teamOne = new Team("Code Conquerors");
+    Team teamTwo = new Team("Bare Metal");
+    assertEquals(true, Team.all().contains(teamOne));
+    assertEquals(true, Team.all().contains(teamTwo));
+  }
 }
