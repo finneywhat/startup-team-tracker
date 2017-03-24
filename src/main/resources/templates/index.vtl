@@ -3,17 +3,25 @@
   <h1>Portland Hack-a-thon</h1>
   <h5>Let's Make Something Great!</h5>
 </div>
-<h5>Current Teams:</h5>
-<ul>
-  #foreach ($team in $teams)
-    <li><a href="/teams/$team.getId()">$team.getTeamName()</a></li>
-  #end
-</ul>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-push-2 col-md-8">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+      <h5>Current Teams:</h5>
+      <ol>
+        #foreach ($team in $teams)
+          <li><a href="/teams/$team.getId()">$team.getTeamName()</a></li>
+        #end
+      </ol>
 
-<a href="/event">View Event</a>
-<br>
-<a href="/teams/new">Add a New Team</a>
-
+      <a href="/event">View Event</a>
+      <br>
+      <a href="/teams/new">Add Your Team Now</a>
+    </div>
+  </div>
+</div>
 <!--index.vtl-->
 
 <!-- list all teams with the ability to click on individual team to view its members

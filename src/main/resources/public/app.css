@@ -1,0 +1,27 @@
+img {
+  width: 75%;
+  display: block;
+  margin: auto;
+  box-shadow: 10px 10px 15px black;
+  margin-bottom: 4%;
+}
+
+.jumbotron {
+  background-image: url("/images/Binary-Code.jpg");
+  background-size: contain;
+  color: white;
+}
+
+.jumbotron h1, .jumbotron h5 {
+  background-color: black;
+  text-shadow: 10px 10px 10px black;
+}
+
+.container {
+  padding-bottom: 3%;
+}
+
+#event {
+  text-align: center;
+  text-shadow: 4px 4px 7px darkgray;
+}
