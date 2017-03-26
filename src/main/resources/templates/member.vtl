@@ -1,10 +1,22 @@
 <!-- member.vtl -->
 <div class="row">
   <div class="col-md-push-2 col-md-8">
-    <h2>$team.getTeamName() Member</h2>
-    <h4>$member.getMemName()</h4>
+    <h2>$team.getTeamName() Member Profile</h2>
+    <hr>
     <br>
+    <h4>Name</h4>
+    <p>$member.getMemName()</p>
     <br>
+    <h4>Hometown</h4>
+    <p>$member.getHomeTown()</p>
+    <br>
+    <h4>Current Employer</h4>
+    <p>$member.getEmployer()</p>
+    <br>
+    <h4>Coding Specialties</h4>
+    <p>$member.getCoding()</p>
+    <br>
+    <hr>
     <button type="button" class="btn btn-primary"><a href="/" class="index-btn">Home</a></button>
     <button type="button" class="btn btn-success"><a href="/teams/$team.getId()" class="index-btn">Back to Team <strong>$team.getTeamName()</strong></a></button>
 

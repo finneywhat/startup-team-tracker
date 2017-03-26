@@ -3,33 +3,43 @@ img {
   display: block;
   margin: auto;
   box-shadow: 10px 10px 15px black;
-  margin-bottom: 4%;
+  margin-bottom: 5%;
 }
 
 .jumbotron {
   background-image: url("/images/Binary-Code.jpg");
   background-size: contain;
   color: white;
+  margin-bottom: 0;
+  border-radius: 0;
 }
 
 .jumbotron h1, .jumbotron h3 {
   font-weight: bold;
   text-align: center;
   text-shadow: 5px 5px 8px black;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Abril Fatface', cursive;
 }
 
 .jumbotron h1 {
-  font-size: 105px;
+  font-size: 75px;
 }
 
-.container {
-  padding-bottom: 3%;
+.jumbotron h3 {
+  background-color: black;
+  padding: .5em 0;
+  opacity: .75;
+  border-radius: 10px 0 10px 0;
+  border: 2px solid white;
 }
 
 #event {
   text-align: center;
-  text-shadow: 4px 4px 7px darkgray;
+  text-shadow: 4px 4px 4px black;
+  font-family: 'Poiret One', cursive;
+  color: white;
+  margin-bottom: 5%;
+  font-size: 50px;
 }
 
 .index-btn {
@@ -47,5 +57,57 @@ li {
 }
 
 .mv-center {
-  margin-left: 38%;
+  margin-left: 37%;
+  margin-right: 6%;
+}
+
+.row-event-bckg {
+  background-color: gray;
+  padding-bottom: 5%
+}
+
+#para-right {
+  text-align: justify;
+  font-weight: lighter;
+  font-style: italic;
+  color: white;
+  font-size: 1.2em;
+  border: 1px solid #0073d7;
+  border-radius: 10px 0 10px 0;
+  padding: 10px 10px;
+}
+
+#para-left {
+  text-align: justify;
+  font-weight: normal;
+  font-style: italic;
+  color: #0073d7;
+  font-size: 1.325em;
+}
+
+.center-btn {
+
+}
+
+.footer {
+  height: 200px;
+  background-color: #0073d7;
+  width: 102.6%;
+}
+
+.footer li {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Poiret One', cursive;
+}
+
+.footer ul {
+  text-align: center;
+}
+
+.row {
+  padding: 5% 0;
 }

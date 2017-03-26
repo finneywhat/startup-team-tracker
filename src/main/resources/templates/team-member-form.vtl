@@ -3,12 +3,24 @@
   <div class="col-md-push-2 col-md-8">
     <h2>Add new member to $team.getTeamName()</h2>
 
-    <form action="/members" method="post" class="well">
-      <input type="hidden" name="teamId" id="teamId" value="$team.getId()">
-      <label for="member">Member name</label>
-      <input id="member" name="member" type="text">
-      <button type="submit" class="btn btn-success">Add Member</button>
-    </form>
+    <div class="form-group">
+      <form action="/members" method="post" class="well">
+        <input type="hidden" name="teamId" id="teamId" value="$team.getId()">
+        <label for="member">Member name</label>
+        <input id="member" name="member" type="text" class="form-control">
+        <br>
+        <label for="home">Home Town</label>
+        <input id="home" name="home" type="text" class="form-control">
+        <br>
+        <label for="home">Current Employer</label>
+        <input id="employer" name="employer" type="text" class="form-control">
+        <br>
+        <label for="home">Coding Specialties</label>
+        <input id="coding" name="coding" type="text" class="form-control">
+        <br>
+        <button type="submit" class="btn btn-success">Add Member</button>
+      </form>
+    </div>
     <br>
     <button type="button" class="btn btn-primary"><a href="/" class="index-btn">Home</a></button>
   </div>
