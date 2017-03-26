@@ -4,12 +4,12 @@
     <h2>Success!</h2>
 
     <p>You have successfully added <strong>$member.getMemName()</strong> to $team.getTeamName()!</p>
-
-    <a href="/teams/$team.getId()/members/new">Add another member</a>
     <br>
-    <a href="/teams/$team.getId()">View your updated team</a>
+    <button type="button" class="btn btn-primary"><a href="/teams/$team.getId()/members/new" class="index-btn">Add another member</a></button>
+    <button type="button" class="btn btn-danger"><a href="/teams/$team.getId()" class="index-btn">View updated $team.getTeamName()</a></button>
     <br>
-    <a href="/">Home</a>
+    <br>
+    <button type="button" class="btn btn-success"><a href="/" class="index-btn">Home</a></button>
   </div>
 </div>
 <!-- team-member-form.vtl -->

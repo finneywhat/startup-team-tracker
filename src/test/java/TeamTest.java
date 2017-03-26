@@ -3,6 +3,11 @@ import static org.junit.Assert.*;
 
 public class TeamTest {
 
+  @Before
+  public void tearDown() {
+    Team.clearList();
+  }
+
   @Test
   public void Team_instantiatesCorrectly_true() {
     Team myTeam = new Team("Code Conquerors");
@@ -32,14 +37,12 @@ public class TeamTest {
 
   @Test
   public void getId_instantiatesTeamInstanceWithAnId_1() {
-    Team.clearList();
     Team myTeam = new Team("Code Conquerors");
     assertEquals(1, myTeam.getId());
   }
 
   @Test
   public void find_returnsTeamWithSameId_teamTwo() {
-    Team.clearList();
     Team teamOne = new Team("Code Conquerors");
     Team teamTwo = new Team("Bare Metal");
     assertEquals(teamTwo, Team.find(teamTwo.getId()));
@@ -47,14 +50,12 @@ public class TeamTest {
 
   @Test
   public void getMembers_initiallyReturnsEmptyList_ArrayList() {
-    Team.clearList();
     Team testTeam = new Team("Code Conquerors");
     assertEquals(0, testTeam.getMembers().size());
   }
 
   @Test
   public void addMember_addsMemberToList_true() {
-    Team.clearList();
     Team testTeam = new Team("Code Conquerors");
     Member testMember = new Member("Aaron");
     testTeam.addMember(testMember);

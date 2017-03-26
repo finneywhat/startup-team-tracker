@@ -2,16 +2,16 @@
 <div class="row">
   <div class="col-md-push-2 col-md-8">
     <h2>$team.getTeamName() Members</h2>
-    
+
     <ol>
       #foreach ($member in $team.getMembers())
         <li><a href="/teams/$team.getId()/members/$member.getId()">$member.getMemName()</a></li>
       #end
     </ol>
-
-    <a href="/teams/$team.getId()/members/new">Add a new member</a>
     <br>
-    <a href="/">All teams</a>
+    <br>
+    <button type="button" class="btn btn-primary"><a href="/teams/$team.getId()/members/new" class="index-btn">Add New Member</a></button>
+    <button type="button" class="btn btn-success"><a href="/" class="index-btn">All Teams</a></button>
   </div>
 </div>
 <!-- team.vtl -->

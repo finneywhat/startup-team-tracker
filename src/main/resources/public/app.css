@@ -12,9 +12,10 @@ img {
   color: white;
 }
 
-.jumbotron h1, .jumbotron h5 {
+.jumbotron h1, .jumbotron h3 {
   background-color: black;
-  text-shadow: 10px 10px 10px black;
+  text-shadow: 4px 4px 5px lightgray;
+  font-family: 'Poiret One', cursive;
 }
 
 .container {
@@ -24,4 +25,18 @@ img {
 #event {
   text-align: center;
   text-shadow: 4px 4px 7px darkgray;
+}
+
+.index-btn {
+  color: white;
+  text-decoration: none;
+}
+
+.index-btn:hover {
+  text-decoration: none;
+  color: lightgray;
+}
+
+li {
+  font-family: helvetica;
 }
