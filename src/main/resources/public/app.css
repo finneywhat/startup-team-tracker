@@ -13,9 +13,14 @@ img {
 }
 
 .jumbotron h1, .jumbotron h3 {
-  background-color: black;
-  text-shadow: 4px 4px 5px lightgray;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 5px 5px 8px black;
   font-family: 'Poiret One', cursive;
+}
+
+.jumbotron h1 {
+  font-size: 105px;
 }
 
 .container {
@@ -39,4 +44,8 @@ img {
 
 li {
   font-family: helvetica;
+}
+
+.mv-center {
+  margin-left: 38%;
 }
