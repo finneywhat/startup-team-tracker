@@ -1,7 +1,7 @@
 <!--index.vtl-->
 <div class="jumbotron">
   <h1>Portland Hack-a-thon</h1>
-  <h3>Let's Make Something Great!</h3>
+  <h3>Hack Attack!</h3>
 </div>
 <div class="container">
   <div class="row">
@@ -9,18 +9,26 @@
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       </p>
-      <h5>Current Teams:</h5>
+      <br>
+      <h4>Current Teams:</h4>
+      #if ($teams.size() > 0)
+        <h6><em>(Click a team name below to see its list of members)</em></h6>
+      #end
+      <hr>
       <ol>
-        #foreach ($team in $teams)
-          <li><a href="/teams/$team.getId()">$team.getTeamName()</a></li>
+        #if ($teams.size() == 0)
+          <h4><em>No teams are currently signed up for the event.</em></h4>
+        #else
+          #foreach ($team in $teams)
+            <li><a href="/teams/$team.getId()">$team.getTeamName()</a></li>
+          #end
         #end
       </ol>
-      <br>
-      <br>
+      <hr>
       <br>
       <div class="center-btns">
-        <button type="button" class="btn btn-primary"><a href="/event" class="index-btn">Event Details</a></button>
-        <button type="button" class="btn btn-success"><a href="/teams/new" class="index-btn">Add Team</a></button>
+        <a href="/event" class="btn btn-primary index-btn">Event Details</a>
+        <a href="/teams/new" class="btn btn-success index-btn">Add Team</a>
       </div>
     </div>
   </div>

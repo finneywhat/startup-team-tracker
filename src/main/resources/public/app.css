@@ -3,7 +3,7 @@ img {
   display: block;
   margin: auto;
   box-shadow: 10px 10px 15px black;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .jumbotron {
@@ -47,18 +47,8 @@ img {
   text-decoration: none;
 }
 
-.index-btn:hover {
-  text-decoration: none;
-  color: lightgray;
-}
-
 li {
   font-family: helvetica;
-}
-
-.mv-center {
-  margin-left: 37%;
-  margin-right: 6%;
 }
 
 .row-event-bckg {
@@ -72,21 +62,18 @@ li {
   font-style: italic;
   color: white;
   font-size: 1.2em;
-  border: 1px solid #0073d7;
+  border: 1px solid #204D74;
   border-radius: 10px 0 10px 0;
   padding: 10px 10px;
 }
 
 #para-left {
-  text-align: justify;
+  text-align: right;
   font-weight: normal;
   font-style: italic;
-  color: #0073d7;
+  color: #204D74;
   font-size: 1.325em;
-}
-
-.center-btn {
-
+  padding-right: 35px;
 }
 
 .footer {
@@ -109,5 +96,15 @@ li {
 }
 
 .row {
-  padding: 5% 0;
+  padding: 4% 0;
+}
+
+.group-btns {
+  width: 65%;
+  margin: auto;
+}
+
+#center-btns {
+  width: 157px;
+  margin: auto;
 }

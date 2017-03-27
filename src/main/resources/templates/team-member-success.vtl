@@ -2,14 +2,15 @@
 <div class="row">
   <div class="col-md-push-2 col-md-8">
     <h2>Success!</h2>
-
-    <p>You have successfully added <strong>$member.getMemName()</strong> to $team.getTeamName()!</p>
+    <hr>
+    <p><strong>$member.getMemName()</strong> has been added to $team.getTeamName()!</p>
+    <hr>
     <br>
-    <button type="button" class="btn btn-primary"><a href="/teams/$team.getId()/members/new" class="index-btn">Add another member</a></button>
-    <button type="button" class="btn btn-danger"><a href="/teams/$team.getId()" class="index-btn">View updated $team.getTeamName()</a></button>
-    <br>
-    <br>
-    <button type="button" class="btn btn-success"><a href="/" class="index-btn">Home</a></button>
+    <div class="group-btns">
+      <a href="/teams/$team.getId()/members/new" class="btn btn-primary index-btn">Add another member</a>
+      <a href="/teams/$team.getId()" class="btn btn-danger index-btn">View updated $team.getTeamName()</a>
+      <a href="/" class="btn btn-success index-btn">Home</a>
+    </div>
   </div>
 </div>
 <!-- team-member-form.vtl -->

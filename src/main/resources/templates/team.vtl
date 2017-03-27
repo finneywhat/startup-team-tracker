@@ -2,16 +2,20 @@
 <div class="row">
   <div class="col-md-push-2 col-md-8">
     <h2>$team.getTeamName() Members</h2>
-
+    <hr>
     <ol>
-      #foreach ($member in $team.getMembers())
-        <li><a href="/teams/$team.getId()/members/$member.getId()">$member.getMemName()</a></li>
+      #if ($team.getMembers().size() == 0)
+        <h4><em>No members are currently assigned to this team.</em></h4>
+      #else
+        #foreach ($member in $team.getMembers())
+          <li><a href="/teams/$team.getId()/members/$member.getId()">$member.getMemName()</a></li>
+        #end
       #end
     </ol>
+    <hr>
     <br>
-    <br>
-    <button type="button" class="btn btn-primary"><a href="/teams/$team.getId()/members/new" class="index-btn">Add New Member</a></button>
-    <button type="button" class="btn btn-success"><a href="/" class="index-btn">All Teams</a></button>
+    <a href="/teams/$team.getId()/members/new" class="btn btn-primary index-btn">Add New Member</a>
+    <a href="/" class="btn btn-success index-btn">All Teams</a>
   </div>
 </div>
 <!-- team.vtl -->

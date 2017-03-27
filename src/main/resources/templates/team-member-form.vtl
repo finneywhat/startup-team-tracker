@@ -1,15 +1,15 @@
 <!-- team-member-form.vtl -->
 <div class="row">
   <div class="col-md-push-2 col-md-8">
-    <h2>Add new member to $team.getTeamName()</h2>
+    <h2>Add New Member to $team.getTeamName()</h2>
 
     <div class="form-group">
       <form action="/members" method="post" class="well">
         <input type="hidden" name="teamId" id="teamId" value="$team.getId()">
-        <label for="member">Member name</label>
+        <label for="member">Member Name</label>
         <input id="member" name="member" type="text" class="form-control">
         <br>
-        <label for="home">Home Town</label>
+        <label for="home">Hometown</label>
         <input id="home" name="home" type="text" class="form-control">
         <br>
         <label for="home">Current Employer</label>
@@ -22,7 +22,7 @@
       </form>
     </div>
     <br>
-    <button type="button" class="btn btn-primary"><a href="/" class="index-btn">Home</a></button>
+    <a href="/" class="btn btn-primary index-btn">Home</a>
   </div>
 </div>
 <!-- team-member-form.vtl -->
